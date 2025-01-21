@@ -1,4 +1,4 @@
-public class StaticIntCalculator {
+public class hello {
     public static void main(String[] args) {
         int num1 = 10, num2 = 5;
         char operator = '+';  // Change this to '+', '-', '*', or '/'
