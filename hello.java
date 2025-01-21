@@ -1,37 +1,27 @@
-import java.util.Scanner;
-
-public class hello {
+public class StaticIntCalculator {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        int num1 = 10, num2 = 5;
+        char operator = '+';  // Change this to '+', '-', '*', or '/'
 
-        System.out.println("Basic Calculator");
-        System.out.print("Enter first number: ");
-        double num1 = scanner.nextDouble();
+        int result;
 
-        System.out.print("Enter an operator (+, -, *, /): ");
-        char operator = scanner.next().charAt(0);
-
-        System.out.print("Enter second number: ");
-        double num2 = scanner.nextDouble();
-
-        double result;
         switch (operator) {
             case '+':
                 result = num1 + num2;
-                System.out.println("Result: " + result);
+                System.out.println(num1 + " + " + num2 + " = " + result);
                 break;
             case '-':
                 result = num1 - num2;
-                System.out.println("Result: " + result);
+                System.out.println(num1 + " - " + num2 + " = " + result);
                 break;
             case '*':
                 result = num1 * num2;
-                System.out.println("Result: " + result);
+                System.out.println(num1 + " * " + num2 + " = " + result);
                 break;
             case '/':
                 if (num2 != 0) {
                     result = num1 / num2;
-                    System.out.println("Result: " + result);
+                    System.out.println(num1 + " / " + num2 + " = " + result);
                 } else {
                     System.out.println("Error: Division by zero is not allowed.");
                 }
@@ -39,7 +29,6 @@ public class hello {
             default:
                 System.out.println("Invalid operator! Please use +, -, *, or /.");
         }
-
-        scanner.close();
     }
 }
+
