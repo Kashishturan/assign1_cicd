@@ -15,6 +15,7 @@ public class hello {
         double num2 = scanner.nextDouble();
 
         double result;
+// hello
         switch (operator) {
             case '+':
                 result = num1 + num2;
